@@ -1,0 +1,352 @@
+/* ============================================
+   Fredrick Culpepper — Portfolio Stylesheet
+   Aesthetic: Bold & Confident | Deep Navy & Silver
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Source+Sans+3:wght@400;500&display=swap');
+
+/* ── CSS Variables ── */
+:root {
+  --navy-deep:    #0a0e1a;
+  --navy-mid:     #0d1b3e;
+  --navy-card:    #0f1626;
+  --navy-inner:   #111d35;
+  --border-dim:   #1e2d50;
+  --border-mid:   #2a3f6f;
+  --border-accent:#2a4a7f;
+  --blue-steel:   #7fa8d4;
+  --blue-mid:     #4a7ab5;
+  --blue-dark:    #4a6a9a;
+  --silver-light: #dce6f0;
+  --silver-mid:   #c0cfe8;
+  --silver-muted: #b0bace;
+  --silver-dim:   #8a9ab8;
+  --text-subtle:  #4a6a9a;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: var(--navy-deep);
+  color: var(--silver-muted);
+  line-height: 1.75;
+  font-size: 1rem;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+/* ── Header / Hero ── */
+header {
+  background: linear-gradient(160deg, var(--navy-mid) 0%, var(--navy-deep) 100%);
+  border-bottom: 2px solid var(--border-mid);
+  padding: 4rem 2rem 3.25rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Silver top bar accent */
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--blue-steel),
+    var(--silver-mid),
+    var(--blue-steel),
+    transparent
+  );
+}
+
+/* Subtle background texture */
+header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 40px,
+    rgba(127, 168, 212, 0.03) 40px,
+    rgba(127, 168, 212, 0.03) 41px
+  );
+  pointer-events: none;
+}
+
+header h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--silver-light);
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: var(--blue-steel);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+/* Divider line under tagline */
+.tagline::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--blue-steel);
+  margin: 1.25rem auto 0;
+}
+
+/* ── Navigation (optional) ── */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: var(--navy-card);
+  border-bottom: 1px solid var(--border-dim);
+}
+
+nav a {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-subtle);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--blue-steel);
+}
+
+/* ── Layout Container ── */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ── Sections ── */
+section {
+  margin-top: 2.5rem;
+  background: var(--navy-card);
+  border: 1px solid var(--border-dim);
+  border-top: 3px solid var(--border-accent);
+  border-radius: 4px;
+  padding: 2rem 2.25rem;
+}
+
+section h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--blue-steel);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-dim);
+}
+
+section p {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--silver-muted);
+}
+
+/* ── Skills ── */
+#skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 0;
+}
+
+#skills ul li {
+  background: var(--navy-inner);
+  border: 1px solid var(--border-mid);
+  border-left: 3px solid var(--blue-steel);
+  padding: 10px 14px;
+  font-size: 0.875rem;
+  color: var(--silver-mid);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+  transition: border-left-color 0.2s ease, background 0.2s ease;
+}
+
+#skills ul li:hover {
+  background: #141f38;
+  border-left-color: var(--silver-mid);
+}
+
+/* Dot before each skill */
+#skills ul li::before {
+  content: '▪';
+  color: var(--blue-mid);
+  margin-right: 8px;
+  font-size: 0.7rem;
+}
+
+/* ── Projects ── */
+.project-card {
+  background: var(--navy-inner);
+  border: 1px solid var(--border-dim);
+  border-left: 4px solid var(--blue-mid);
+  padding: 1.5rem 1.75rem;
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
+  transition: border-left-color 0.2s ease;
+}
+
+.project-card:last-child {
+  margin-bottom: 0;
+}
+
+.project-card:hover {
+  border-left-color: var(--blue-steel);
+}
+
+.project-card h3 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--silver-light);
+  margin-bottom: 0.6rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: var(--silver-dim);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.project-card a {
+  display: inline-block;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.8rem;
+  color: var(--blue-steel);
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-accent);
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card a:hover {
+  color: var(--silver-mid);
+  border-color: var(--silver-mid);
+}
+
+/* ── Contact ── */
+#contact ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: var(--silver-muted);
+}
+
+.contact-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  min-width: 75px;
+  font-weight: 700;
+}
+
+#contact a {
+  color: var(--blue-steel);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#contact a:hover {
+  color: var(--silver-mid);
+}
+
+/* ── Footer (optional) ── */
+footer {
+  text-align: center;
+  margin-top: 3.5rem;
+  padding: 1.5rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  border-top: 1px solid var(--border-dim);
+}
+
+/* ── Links (global fallback) ── */
+a {
+  color: var(--blue-steel);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--silver-mid);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  header {
+    padding: 3rem 1.25rem 2.5rem;
+  }
+
+  section {
+    padding: 1.5rem 1.25rem;
+  }
+
+  #skills ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  nav {
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+}
