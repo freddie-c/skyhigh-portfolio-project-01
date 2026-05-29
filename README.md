@@ -1,5 +1,6 @@
 # skyhigh-portfolio-project-01
-Live Preview
+<img width="1437" height="808" alt="image" src="https://github.com/user-attachments/assets/d78a829d-b65c-4701-a349-49d13229f8c3" />
+
 Building a static website deployed on AWS S3 + CloudFront.
 # SkyHigh Portfolio Project 1 — Static Website on AWS
 
