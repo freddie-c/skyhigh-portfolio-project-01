@@ -2,6 +2,8 @@
 
 <img width="1437" height="808" alt="image" src="https://github.com/user-attachments/assets/d78a829d-b65c-4701-a349-49d13229f8c3" />
 
+---
+
 # SkyHigh Portfolio Project 1 — Static Website on AWS
 
 My personal portfolio website, deployed on AWS using S3 for storage
@@ -19,7 +21,7 @@ anywhere in the world.
 
 <img width="753" height="565" alt="image" src="https://github.com/user-attachments/assets/1d805df2-389f-497c-aab1-669ff1cb8ac2" />
 
-User → CloudFront (HTTPS + CDN) → S3 Bucket (index.html + style.css)
+User → CloudFront (HTTPS + CDN) → S3 Bucket (index.html + style.css) + Github Push
 
 ---
 
