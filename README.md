@@ -1,4 +1,5 @@
 # skyhigh-portfolio-project-01
+Live Preview
 Building a static website deployed on AWS S3 + CloudFront.
 # SkyHigh Portfolio Project 1 — Static Website on AWS
 
