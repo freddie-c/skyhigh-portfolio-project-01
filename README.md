@@ -1,4 +1,4 @@
-# skyhigh-portfolio-project-01
+# skyhigh-portfolio-project-01 — Static Website on AWS
 
 <img width="1437" height="808" alt="image" src="https://github.com/user-attachments/assets/d78a829d-b65c-4701-a349-49d13229f8c3" />
 
