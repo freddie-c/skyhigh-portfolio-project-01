@@ -97,16 +97,39 @@
 
     <div class="project-card">
     <h3>Project 2 — Production VPC with Terraform</h3>
-      <p>A complete,production-pattern AWS network provisioned entirely with Terraform. A reusable VPC module (multi-AZ public/private subnets, IGW, NAT), two-tier security groups, an nginx web server, and a locked-down S3 bucket. Built as SkyHigh Academy Project 2 to demonstrate infrastructure-as-code, module design, and least-privilege security.</p>
+      <p>A complete, production-pattern AWS network provisioned entirely with Terraform. A reusable VPC module (multi-AZ public/private subnets, IGW, NAT), two-tier security groups, an nginx web server, and a locked-down S3 bucket. Built as SkyHigh Academy Project 2 to demonstrate infrastructure-as-code, module design, and least-privilege security.</p>   <!-- added the missing space after "complete," -->
+      <p><strong>Tools/Technologies Used:</strong> Terraform · AWS VPC · Amazon EC2 · AWS S3 · Security Groups · nginx · Git/GitHub · VS Code / macOS</p>
       <a href="https://github.com/freddie-c/skyhigh-portfolio-project-02" target="_blank">View Project</a>
     </div>
 
     <div class="project-card">
     <h3>Project 3 — SkyHigh Patchwork Lab — Docker & Kubernetes Deployment</h3>
       <p>I took a two-service Flask application from bare Python on my laptop to a self-healing Kubernetes deployment: containerized both services with hardened Dockerfiles, verified them locally with Docker Compose, published the images to Docker Hub, and deployed them to a kind cluster with health probes, externalized configuration, and demonstrated automatic pod recovery.</p>
+      <p><strong>Tools/Technologies Used:</strong> Python · Flask · Docker · Docker Compose · Docker Hub · Kubernetes · kind · Git/GitHub · VS Code / macOS</p>
       <a href="https://github.com/freddie-c/Skyhigh-portfolio-project-03-Docker-and-Kubernetes-Deployment" target="_blank">View Project</a>
     </div>
-    <!-- You will add Project 2, 3, 4 here later -->
+
+    <div class="project-card">
+    <h3>Project 4 — Automate Everything: A Full CI/CD Pipeline</h3>
+      <p>Built a GitHub Actions pipeline that takes a Flask app from commit to running on Kubernetes in about 6 minutes, against a 10-minute target. Each stage gates the next: flake8 lint, pytest with a 90% coverage gate, a multi-arch Docker build pushed to Docker Hub with versioned tags, and a deploy to a kind cluster through a self-hosted runner, finished with an in-cluster smoke test and a version audit trail. All credentials live in GitHub Actions Secrets; nothing is hardcoded.</p>
+      <p><strong>Tools/Technologies Used:</strong> GitHub Actions · Python · Flask · pytest · flake8 · Docker · Docker Hub · Kubernetes · kind · Git/GitHub · VS Code / macOS</p>
+      <a href="https://github.com/freddie-c/skyhigh-Portfolio-Project-04-Automate-A-Full-CICD-Pipeline" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+    <h3>Project 5 — Production Monitoring with Prometheus & Grafana</h3>
+      <p>Deployed a complete production monitoring stack on AWS (Prometheus for metrics collection, Grafana for dashboards and alerting, plus Amazon CloudWatch), provisioned with Terraform and full config-as-code. The server has no inbound SSH; all access goes through AWS Systems Manager Session Manager. Alerts are delivered as real email over SMTP, and each one is backed by a written runbook.</p>
+      <p><strong>Tools/Technologies Used:</strong> Terraform · Amazon EC2 · AWS Systems Manager · Prometheus · Grafana · Amazon CloudWatch · Git/GitHub · VS Code / macOS</p>   <!-- add Docker Compose or exporters if the final build used them -->
+      <a href="https://github.com/freddie-c/Skyhigh-Portfolio-Project-05-Production-Monitoring-with-Prometheus-and-Grafana" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+    <h3>Project 6 — Job Application Assistant & Tracker</h3>
+      <p>A local-first job search assistant that pulls listings from public Greenhouse and Lever APIs, uses the Anthropic Claude API to tailor resume bullets to each posting, and tracks my application pipeline in a SQLite database with a Streamlit view on localhost. It's human-in-the-loop by design: it prepares, and I review and submit, with no auto-apply and no scraping. I delivered it as a six-ticket epic, each ticket on its own branch and pull request, with secrets and personal data kept out of the repo.</p>
+      <p><strong>Tools/Technologies Used:</strong> Python · Anthropic Claude API · Greenhouse & Lever APIs · SQLite · Streamlit · Git/GitHub · VS Code / macOS</p>
+      <a href="https://github.com/freddie-c/Skyhigh-Portfolio-Project-06-Job-Assistant-Tracker" target="_blank">View Project</a>
+    </div>
+    
   </section>
 
   <!-- SECTION 5: CONTACT -->
