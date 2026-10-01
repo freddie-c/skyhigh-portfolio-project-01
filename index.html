@@ -35,28 +35,53 @@
 
   <!-- SECTION 3: SKILLS -->
   <section id="skills">
-    <h2>Skills</h2>
     <ul>
       <li>Amazon Web Services (AWS)</li>
+      <li>Amazon EC2</li>                          <!-- Projects 2, 5 -->
+      <li>Amazon S3 & CloudFront</li>              <!-- Project 1 -->
+      <li>IAM</li>
+      <li>AWS Lambda</li>                          <!-- RMC Platform -->
+      <li>Amazon Bedrock</li>                      <!-- RMC Platform -->
+      <li>Amazon DynamoDB</li>                     <!-- RMC Platform -->
+      <li>Amazon RDS (PostgreSQL)</li>             <!-- Module 4.5 lab -->
+      <li>AWS Secrets Manager</li>                 <!-- Module 4.5, RMC -->
+      <li>Amazon EventBridge</li>                  <!-- RMC Platform -->
+      <li>Amazon SES & SNS</li>                    <!-- RMC alerts, Module 11 alarms -->
+      <li>Amazon CloudWatch</li>                   <!-- Module 11, Project 5 -->
+      <li>AWS Systems Manager (Session Manager)</li>  <!-- Project 5: no-SSH access -->
       <li>Linux</li>
       <li>Bash Scripting</li>
       <li>Git & GitHub</li>
       <li>VS Code</li>
       <li>Terraform</li>
+      <li>Infrastructure as Code (IaC)</li>        <!-- replaces "IAAC" -->
       <li>Python</li>
+      <li>Flask</li>
+      <li>pytest & flake8</li>                     <!-- Project 4 -->
       <li>Docker</li>
+      <li>Docker Compose</li>                      <!-- Project 3, Module 11 -->
       <li>Kubernetes</li>
+      <li>kind</li>                                <!-- Projects 3, 4 -->
+      <li>GitHub Actions</li>                      <!-- Project 4 -->
+      <li>CI/CD Pipelines</li>                     <!-- Project 4 -->
+      <li>Prometheus</li>                          <!-- Project 5 -->
+      <li>Grafana</li>                             <!-- Project 5 -->
       <li>Ansible</li>
+      <li>nginx</li>
+      <li>Anthropic Claude API</li>                <!-- Project 6: tailoring engine -->
+      <li>Prompt Engineering</li>                  <!-- Project 6: file-based prompts, structured JSON -->
+      <li>REST APIs</li>                           <!-- Project 6: Greenhouse/Lever fetchers -->
+      <li>SQLite & SQL</li>                        <!-- Project 6: tracker database -->
+      <li>Streamlit</li>                           <!-- Project 6: local tracker view -->
+      <li>Static Website Deployment</li>
       <li>Agile</li>
-      <li>IAM</li>
-      <li>IAAC</li>
-      <li>SharePoint</li>
-      <li>Active Directory</li>
-      <li>Power BI</li>
       <li>JIRA</li>
       <li>ServiceNow</li>
       <li>SolarWinds</li>
-      <li>Static Website Deployment</li>
+      <li>SharePoint</li>
+      <li>Active Directory</li>
+      <li>Power BI</li>
+    </ul>
     </ul>
   </section>
 
@@ -68,6 +93,18 @@
       <p>Deployed a personal portfolio website to the AWS cloud using S3 static website hosting.</p>
       <p><strong>Tools/Technologies Used:</strong> AWS S3 · AWS CloudFront · AWS Management Console · VS Code · Git/GitHub · HTML · CSS · JavaScript</p>
       <a href="#" target="_blank">View Live Site</a>
+    </div>
+
+    <div class="project-card">
+    <h3>Project 2 — Production VPC with Terraform</h3>
+      <p>A complete,production-pattern AWS network provisioned entirely with Terraform. A reusable VPC module (multi-AZ public/private subnets, IGW, NAT), two-tier security groups, an nginx web server, and a locked-down S3 bucket. Built as SkyHigh Academy Project 2 to demonstrate infrastructure-as-code, module design, and least-privilege security.</p>
+      <a href="https://github.com/freddie-c/skyhigh-portfolio-project-02" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+    <h3>Project 3 — SkyHigh Patchwork Lab — Docker & Kubernetes Deployment</h3>
+      <p>I took a two-service Flask application from bare Python on my laptop to a self-healing Kubernetes deployment: containerized both services with hardened Dockerfiles, verified them locally with Docker Compose, published the images to Docker Hub, and deployed them to a kind cluster with health probes, externalized configuration, and demonstrated automatic pod recovery.</p>
+      <a href="https://github.com/freddie-c/Skyhigh-portfolio-project-03-Docker-and-Kubernetes-Deployment" target="_blank">View Project</a>
     </div>
     <!-- You will add Project 2, 3, 4 here later -->
   </section>
